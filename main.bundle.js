@@ -21,7 +21,7 @@ module.exports = module.exports.toString();
 /***/ 138:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\n  {{title}}\n</h1>\n"
+module.exports = "<nav class=\"navbar navbar-inverse bg-inverse navbar-toggleable-sm hidden-print\" style=\"margin-bottom:20px\">\n    <div class=\"container\"> <a class=\"navbar-brand\">{{title}}</a>\n        <ul class=\"nav navbar-nav active\">\n<!--            <li class=\"nav-item\"><a routerLink=\"/lisa\" \n                class=\"nav-link\">Lisa Reporting</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/reports\" \n                class=\"nav-link\">Reports</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/tools\" \n                class=\"nav-link\">Tools</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/login\" \n                class=\"nav-link\">Login</a>\n            </li> -->\n        </ul>\n    </div>\n<!--    <mpfs-backend-status></mpfs-backend-status> -->\n</nav>\n\n\n<!--<div class=\"container\">\n    <router-outlet></router-outlet>\n</div>-->\n\n<h1>\n  {{title}}\n</h1>\n"
 
 /***/ }),
 
