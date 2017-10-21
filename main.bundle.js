@@ -83,7 +83,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'caaaveman works!';
+        this.title = 'Caaaveman works!';
     }
     return AppComponent;
 }());
