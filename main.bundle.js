@@ -1,9 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 137:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(45)(false);
+exports = module.exports = __webpack_require__(46)(false);
 // imports
 
 
@@ -18,22 +18,22 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 138:
+/***/ 159:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse bg-inverse navbar-toggleable-sm hidden-print\" style=\"margin-bottom:20px\">\n    <div class=\"container\"> <a class=\"navbar-brand\">{{title}}</a>\n        <ul class=\"nav navbar-nav active\">\n<!--            <li class=\"nav-item\"><a routerLink=\"/lisa\" \n                class=\"nav-link\">Lisa Reporting</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/reports\" \n                class=\"nav-link\">Reports</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/tools\" \n                class=\"nav-link\">Tools</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/login\" \n                class=\"nav-link\">Login</a>\n            </li> -->\n        </ul>\n    </div>\n<!--    <mpfs-backend-status></mpfs-backend-status> -->\n</nav>\n\n\n<!--<div class=\"container\">\n    <router-outlet></router-outlet>\n</div>-->\n\n<h1>\n  {{title}}\n</h1>\n"
+module.exports = "<nav class=\"navbar navbar-inverse bg-inverse navbar-toggleable-sm hidden-print\" style=\"margin-bottom:20px\">\n    <div class=\"container\"> <a class=\"navbar-brand\">{{title}}</a>\n        <ul class=\"nav navbar-nav active\">\n<!--            <li class=\"nav-item\"><a routerLink=\"/lisa\" \n                class=\"nav-link\">Lisa Reporting</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/reports\" \n                class=\"nav-link\">Reports</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/tools\" \n                class=\"nav-link\">Tools</a>\n            </li>\n            <li class=\"nav-item\"><a routerLink=\"/login\" \n                class=\"nav-link\">Login</a>\n            </li> -->\n        </ul>\n    </div>\n<!--    <mpfs-backend-status></mpfs-backend-status> -->\n</nav>\n\n\n<!--<div class=\"container\">\n    <router-outlet></router-outlet>\n</div>-->\n\n<h1>\n  {{title}}\n</h1>\n\n<div markdown-to-html>\n  # Markdown\n  ## Markdown\n</div>"
 
 /***/ }),
 
-/***/ 169:
+/***/ 193:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(74);
+module.exports = __webpack_require__(80);
 
 
 /***/ }),
 
-/***/ 73:
+/***/ 79:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -42,20 +42,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 73;
+webpackEmptyContext.id = 79;
 
 
 /***/ }),
 
-/***/ 74:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(88);
 
 
 
@@ -68,11 +68,11 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 81:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88,10 +88,10 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_0" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(138),
-        styles: [__webpack_require__(137)]
+        template: __webpack_require__(159),
+        styles: [__webpack_require__(142)]
     })
 ], AppComponent);
 
@@ -99,15 +99,16 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 82:
+/***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_markdown_to_html_dist_lib__ = __webpack_require__(144);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -115,6 +116,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -128,12 +130,13 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_5_ng2_markdown_to_html_dist_lib__["a" /* MarkdownToHtmlModule */].forRoot()
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
@@ -144,7 +147,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 83:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -156,5 +159,5 @@ var environment = {
 
 /***/ })
 
-},[169]);
+},[193]);
 //# sourceMappingURL=main.bundle.js.map
