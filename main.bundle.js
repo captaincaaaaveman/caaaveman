@@ -347,7 +347,7 @@ var BlogService = (function () {
         });
     };
     BlogService.prototype.getBlogEntries = function () {
-        var url = this.backendUrl + "allBlogs";
+        var url = this.backendUrl + "/allBlogs";
         console.log('Looking up ', url);
         return this.http.get(url, this.getRequestOptions())
             .toPromise()
@@ -380,7 +380,7 @@ var _a;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
 var environment = {
     production: true,
-    backendUrl: 'https://whispering-harbor-28355.herokuapp.com',
+    backendUrl: 'https://whispering-harbor-28355.herokuapp.com/',
 };
 //# sourceMappingURL=environment.js.map
 
