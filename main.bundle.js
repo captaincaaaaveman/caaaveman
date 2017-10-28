@@ -235,7 +235,7 @@ module.exports = "<nav class=\"navbar navbar-inverse bg-inverse navbar-toggleabl
 /***/ 185:
 /***/ (function(module, exports) {
 
-module.exports = " <i class=\"fa fa-american-sign-language-interpreting fa-5x\" aria-hidden=\"true\"> </i>    \r\n<markdown-to-html [data]=\"blog.markdown\">\r\n</markdown-to-html>\r\n{{blog.tags}}\r\n\r\n"
+module.exports = " <i class=\"fa fa-american-sign-language-interpreting fa-5x\" aria-hidden=\"true\"> </i>    \r\n<markdown-to-html [data]=\"blog.markdown\">\r\n</markdown-to-html>\r\n{{blog.tags}}\r\n\r\n<p>\r\n    {{blogs}}\r\n</p>"
 
 /***/ }),
 
@@ -287,6 +287,10 @@ var BlogComponent = (function () {
             console.log("Replacing ", _this.blog, "with ", blog);
             _this.blog = blog;
         });
+        this.blogService.getBlogEntries().then(function (blogs) {
+            console.log("Replacing ", _this.blogs, "with ", blogs);
+            _this.blogs = blogs;
+        });
     };
     return BlogComponent;
 }());
@@ -333,7 +337,17 @@ var BlogService = (function () {
         this.backendUrl = "" + __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].backendUrl;
     }
     BlogService.prototype.getBlogEntry = function () {
-        var url = this.backendUrl + "/markdown";
+        var url = this.backendUrl + "/blog";
+        console.log('Looking up ', url);
+        return this.http.get(url, this.getRequestOptions())
+            .toPromise()
+            .then(function (response) {
+            console.log(response);
+            return response.json();
+        });
+    };
+    BlogService.prototype.getBlogEntries = function () {
+        var url = this.backendUrl + "allBlogs";
         console.log('Looking up ', url);
         return this.http.get(url, this.getRequestOptions())
             .toPromise()
